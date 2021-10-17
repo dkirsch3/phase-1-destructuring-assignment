@@ -57,15 +57,17 @@ const [indg] = colors.splice(5,1)
 
 // 7. Use destructuring to assign all variables using the keys as the variable names
 
-const muppetName = muppet.muppetName
-const color = muppet.color
-const song = muppet.song
-const job = muppet.job
-const partner = muppet.partner
+const {muppetName,color,song,job,partner} = muppet
+// const muppetName = muppet.muppetName
+// const color = muppet.color
+// const song = muppet.song
+// const job = muppet.job
+// const partner = muppet.partner
 
 // 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
 
-const song2 = nestedMuppet.album.theMuppetMovie.song2
-const song4 = nestedMuppet.album.theMuppetMovie.song4
-const nestedJob = nestedMuppet.nestedJob
-const nestedPartner = nestedMuppet.nestedPartner
+const {song2, song4} = nestedMuppet.album.theMuppetMovie
+//const song4 = nestedMuppet.album.theMuppetMovie.song4
+//const nestedJob = nestedMuppet.nestedJob
+//const nestedPartner = nestedMuppet.nestedPartner
+const {nestedJob, nestedPartner} = nestedMuppet
